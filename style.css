@@ -794,3 +794,130 @@ pre {
     }
 
 }
+
+/* ================= CONTATO ================= */
+
+.contact {
+    padding: 110px 0;
+    text-align: center;
+    background: var(--background-light);
+    border-top: 1px solid var(--border);
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--text);
+}
+
+.contact > .container > p {
+    max-width: 600px;
+    margin: 0 auto 45px;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* CARDS */
+
+.contact-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 350px));
+    justify-content: center;
+    gap: 25px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 25px;
+    text-align: left;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    text-decoration: none;
+    color: var(--text);
+
+    transition: all 0.3s ease;
+}
+
+/* ÍCONE */
+
+.contact-card > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    background: rgba(0, 168, 255, 0.1);
+    border: 1px solid rgba(0, 168, 255, 0.25);
+    border-radius: 12px;
+
+    font-size: 1.5rem;
+}
+
+/* TEXTO */
+
+.contact-card strong {
+    display: block;
+    margin-bottom: 5px;
+
+    font-size: 1.05rem;
+    color: var(--text);
+}
+
+.contact-card p {
+    margin: 0;
+
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* HOVER */
+
+.contact-card:hover {
+    transform: translateY(-6px);
+
+    border-color: var(--primary);
+
+    box-shadow: 0 10px 30px rgba(0, 168, 255, 0.12);
+}
+
+.contact-card:hover > span {
+    background: rgba(0, 168, 255, 0.18);
+    border-color: var(--primary);
+}
+
+.contact-card:hover strong {
+    color: var(--primary-light);
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 650px) {
+
+    .contact {
+        padding: 80px 20px;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact-links {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+}
