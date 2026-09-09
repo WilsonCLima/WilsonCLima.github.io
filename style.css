@@ -1,0 +1,769 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #050b14;
+    color: #e6edf3;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* =========================
+   VARIÁVEIS
+========================= */
+
+:root {
+    --background: #050b14;
+    --background-light: #0a1322;
+    --card: #0c1727;
+
+    --primary: #00a8ff;
+    --primary-light: #38bdf8;
+
+    --text: #e6edf3;
+    --text-secondary: #8b9bb0;
+
+    --border: rgba(255, 255, 255, 0.08);
+
+    --container: 1150px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: min(90%, var(--container));
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(5, 11, 20, 0.85);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    color: white;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+
+/* MENU */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-links a {
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 0.85rem;
+
+    color: var(--text-secondary);
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+
+/* MOBILE MENU */
+
+.menu-toggle {
+    display: none;
+
+    border: none;
+    background: none;
+
+    color: white;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 75px;
+
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(0, 168, 255, 0.12),
+            transparent 30%
+        );
+}
+
+.hero-content {
+    display: grid;
+
+    grid-template-columns: 1.1fr 0.9fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* HERO TEXT */
+
+.hero-greeting {
+    font-family: "JetBrains Mono", monospace;
+
+    color: var(--primary);
+
+    font-size: 1rem;
+
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 5.5rem);
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: var(--primary);
+}
+
+.hero h2 {
+    font-size: clamp(1.3rem, 3vw, 2rem);
+
+    color: #cbd5e1;
+
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 600px;
+
+    color: var(--text-secondary);
+
+    font-size: 1.05rem;
+
+    margin-bottom: 35px;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons,
+.contact-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 25px;
+
+    border-radius: 6px;
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 0.85rem;
+
+    transition: 0.3s;
+
+    border: 1px solid var(--primary);
+}
+
+.btn-primary {
+    background: var(--primary);
+
+    color: #001018;
+
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 30px rgba(0, 168, 255, 0.25);
+}
+
+.btn-secondary {
+    color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background: rgba(0, 168, 255, 0.08);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   CODE WINDOW
+========================= */
+
+.code-window {
+    background: #07101c;
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.5),
+        0 0 50px rgba(0, 168, 255, 0.08);
+}
+
+.code-header {
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 0 18px;
+
+    border-bottom: 1px solid var(--border);
+
+    background: #0a1422;
+}
+
+.code-header p {
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 0.75rem;
+
+    color: var(--text-secondary);
+}
+
+.window-buttons {
+    display: flex;
+
+    gap: 7px;
+}
+
+.window-buttons span {
+    width: 11px;
+    height: 11px;
+
+    border-radius: 50%;
+
+    background: #263548;
+}
+
+.code-content {
+    padding: 25px;
+
+    overflow-x: auto;
+}
+
+pre {
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 0.85rem;
+
+    line-height: 1.9;
+}
+
+.code-keyword {
+    color: #c084fc;
+}
+
+.code-class {
+    color: #38bdf8;
+}
+
+.code-string {
+    color: #86efac;
+}
+
+.code-boolean {
+    color: #fbbf24;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    padding: 110px 0;
+}
+
+.section-dark {
+    background: var(--background-light);
+}
+
+.section-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    font-family: "JetBrains Mono", monospace;
+
+    color: var(--primary);
+
+    font-size: 0.9rem;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+}
+
+.section-description {
+    color: var(--text-secondary);
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.about-content {
+    display: grid;
+
+    grid-template-columns: 1.3fr 0.7fr;
+
+    gap: 70px;
+}
+
+.about-text p {
+    color: var(--text-secondary);
+
+    margin-bottom: 20px;
+
+    font-size: 1rem;
+}
+
+.about-text strong {
+    color: white;
+}
+
+.about-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.info-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    border-color: rgba(0, 168, 255, 0.4);
+
+    transform: translateX(5px);
+}
+
+.info-card > span {
+    font-size: 1.5rem;
+}
+
+.info-card strong {
+    font-size: 0.9rem;
+}
+
+.info-card p {
+    color: var(--text-secondary);
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.skill-card {
+    padding: 25px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(0, 168, 255, 0.4);
+}
+
+.skill-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 8px;
+
+    background: rgba(0, 168, 255, 0.08);
+
+    color: var(--primary);
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-weight: 700;
+}
+
+.skill-card h3 {
+    font-size: 1rem;
+
+    margin-bottom: 5px;
+}
+
+.skill-card p {
+    color: var(--text-secondary);
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================
+   PROJETOS
+========================= */
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.project-card {
+    padding: 28px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(0, 168, 255, 0.4);
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.project-top {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.project-folder {
+    font-size: 1.8rem;
+}
+
+.project-links a {
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 0.7rem;
+
+    color: var(--primary);
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+
+    margin-bottom: 12px;
+}
+
+.project-card > p {
+    color: var(--text-secondary);
+
+    font-size: 0.85rem;
+
+    margin-bottom: 25px;
+}
+
+.project-tech {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.project-tech span {
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 0.65rem;
+
+    color: var(--text-secondary);
+
+    padding: 4px 7px;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border-radius: 4px;
+}
+
+
+/* =========================
+   CONTATO
+========================= */
+
+.contact-section {
+    text-align: center;
+
+    padding: 140px 0;
+}
+
+.contact-content {
+    max-width: 650px;
+}
+
+.contact-number {
+    font-family: "JetBrains Mono", monospace;
+
+    color: var(--primary);
+
+    margin-bottom: 10px;
+}
+
+.contact-content h2 {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+
+    margin-bottom: 20px;
+}
+
+.contact-content > p:not(.contact-number) {
+    color: var(--text-secondary);
+
+    margin-bottom: 30px;
+}
+
+.contact-buttons {
+    justify-content: center;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    border-top: 1px solid var(--border);
+
+    padding: 30px 0;
+
+    color: var(--text-secondary);
+
+    font-size: 0.8rem;
+
+    text-align: center;
+}
+
+.footer strong {
+    color: white;
+}
+
+.footer-code {
+    font-family: "JetBrains Mono", monospace;
+
+    color: var(--primary);
+
+    margin-top: 5px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-code {
+        display: none;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: 65px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero {
+        padding-top: 100px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons,
+    .contact-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+}
