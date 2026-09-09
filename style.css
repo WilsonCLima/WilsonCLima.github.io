@@ -767,3 +767,30 @@ pre {
     }
 
 }
+
+@media (max-width: 650px) {
+
+    .nav-links.active {
+        display: flex;
+
+        position: absolute;
+
+        top: 65px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+
+        background: #050b14;
+
+        border-bottom: 1px solid var(--border);
+    }
+
+}
