@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Portfólio de Wilson Costa Lima - Desenvolvedor Java em formação, focado em Backend, Spring Boot e APIs REST.">
+          content="Portfólio de Wilson Costa Lima — estudante de ADS e desenvolvedor Backend Java em formação, com foco em Java, Spring Boot, APIs REST e bancos de dados.">
 
-    <title>Wilson Costa Lima | Desenvolvedor Java</title>
+    <title>Wilson Costa Lima | Backend Java</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -19,516 +18,354 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+<header class="header">
+    <nav class="navbar container">
+        <a href="#inicio" class="logo">
+            <span>&lt;</span>W<span>/&gt;</span>
+        </a>
 
-    <header class="header">
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
 
-        <nav class="navbar container">
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#skills">Tecnologias</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
 
-            <a href="#inicio" class="logo">
-                <span>&lt;</span>W<span>/&gt;</span>
-            </a>
+<main>
 
-            <button class="menu-toggle" aria-label="Abrir menu">
-                ☰
-            </button>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
 
-            <ul class="nav-links">
-                <li>
-                    <a href="#inicio">Início</a>
-                </li>
+            <div class="hero-text">
+                <p class="hero-greeting">Olá, eu sou</p>
 
-                <li>
-                    <a href="#sobre">Sobre</a>
-                </li>
+                <h1>
+                    Wilson Costa
+                    <span>Lima.</span>
+                </h1>
 
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
+                <h2>Desenvolvedor Backend Java em formação</h2>
 
-                <li>
-                    <a href="#projetos">Projetos</a>
-                </li>
+                <p class="hero-description">
+                    Estudante de Análise e Desenvolvimento de Sistemas,
+                    com foco em Java, Spring Boot, APIs REST, bancos de dados
+                    e desenvolvimento de aplicações web.
+                </p>
 
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
-            </ul>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-primary">Ver projetos</a>
 
-        </nav>
+                    <a href="https://github.com/WilsonCLima"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-secondary">
+                        GitHub ↗
+                    </a>
+                </div>
+            </div>
 
-    </header>
+            <div class="hero-code">
+                <div class="code-window">
 
-
-    <main>
-
-        <!-- ================= HERO ================= -->
-
-        <section id="inicio" class="hero">
-
-            <div class="container hero-content">
-
-                <div class="hero-text">
-
-                    <p class="hero-greeting">
-                        Olá, eu sou
-                    </p>
-
-                    <h1>
-                        Wilson Costa
-                        <span>Lima.</span>
-                    </h1>
-
-                    <h2>
-                        Desenvolvedor Java em formação
-                    </h2>
-
-                    <p class="hero-description">
-                        Focado em desenvolvimento Backend, APIs REST,
-                        banco de dados e construção de aplicações web.
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="#projetos" class="btn btn-primary">
-                            Ver projetos
-                        </a>
-
-                        <a href="https://github.com/" target="_blank" class="btn btn-secondary">
-                            GitHub ↗
-                        </a>
-
+                    <div class="code-header">
+                        <div class="window-buttons">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <p>Wilson.java</p>
                     </div>
 
-                </div>
-
-
-                <div class="hero-code">
-
-                    <div class="code-window">
-
-                        <div class="code-header">
-
-                            <div class="window-buttons">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-
-                            <p>Wilson.java</p>
-
-                        </div>
-
-
-                        <div class="code-content">
-
+                    <div class="code-content">
 <pre><code><span class="code-keyword">public class</span> <span class="code-class">Wilson</span> {
 
     <span class="code-keyword">String</span> foco =
         <span class="code-string">"Backend Java"</span>;
 
-    <span class="code-keyword">String</span>[] skills = {
+    <span class="code-keyword">String</span>[] conhecimentos = {
         <span class="code-string">"Java"</span>,
         <span class="code-string">"Spring Boot"</span>,
-        <span class="code-string">"SQL"</span>,
-        <span class="code-string">"React"</span>
+        <span class="code-string">"REST API"</span>,
+        <span class="code-string">"SQL"</span>
     };
 
     <span class="code-keyword">boolean</span> aprendendo =
         <span class="code-boolean">true</span>;
 }</code></pre>
-
-                        </div>
-
                     </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= SOBRE ================= -->
-
-        <section id="sobre" class="section">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <span>01.</span>
-                    <h2>Sobre mim</h2>
-
-                </div>
-
-
-                <div class="about-content">
-
-                    <div class="about-text">
-
-                        <p>
-                            Sou <strong>Wilson Costa Lima</strong>, desenvolvedor
-                            em formação com foco em desenvolvimento de software
-                            e principalmente Backend com Java.
-                        </p>
-
-                        <p>
-                            Atualmente venho aprofundando meus conhecimentos
-                            em <strong>Java, Spring Boot, APIs REST,
-                            bancos de dados e desenvolvimento web</strong>.
-                        </p>
-
-                        <p>
-                            Gosto de transformar o conhecimento adquirido
-                            em projetos práticos, buscando escrever código
-                            organizado, entender os fundamentos e evoluir
-                            constantemente como desenvolvedor.
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-info">
-
-                        <div class="info-card">
-                            <span>📍</span>
-                            <div>
-                                <strong>Localização</strong>
-                                <p>Boa Vista, Roraima</p>
-                            </div>
-                        </div>
-
-
-                        <div class="info-card">
-                            <span>💻</span>
-                            <div>
-                                <strong>Foco</strong>
-                                <p>Backend Java</p>
-                            </div>
-                        </div>
-
-
-                        <div class="info-card">
-                            <span>🚀</span>
-                            <div>
-                                <strong>Objetivo</strong>
-                                <p>Software Engineer</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= SKILLS ================= -->
-
-        <section id="skills" class="section section-dark">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <span>02.</span>
-                    <h2>Tecnologias</h2>
-
-                </div>
-
-
-                <p class="section-description">
-                    Tecnologias que utilizo ou estou estudando atualmente.
-                </p>
-
-
-                <div class="skills-grid">
-
-                    <div class="skill-card">
-                        <div class="skill-icon java">☕</div>
-                        <h3>Java</h3>
-                        <p>Backend e orientação a objetos</p>
-                    </div>
-
-
-                    <div class="skill-card">
-                        <div class="skill-icon spring">◆</div>
-                        <h3>Spring Boot</h3>
-                        <p>APIs REST e aplicações backend</p>
-                    </div>
-
-
-                    <div class="skill-card">
-                        <div class="skill-icon database">▣</div>
-                        <h3>MySQL</h3>
-                        <p>Banco de dados relacional</p>
-                    </div>
-
-
-                    <div class="skill-card">
-                        <div class="skill-icon database">▣</div>
-                        <h3>PostgreSQL</h3>
-                        <p>Banco de dados relacional</p>
-                    </div>
-
-
-                    <div class="skill-card">
-                        <div class="skill-icon javascript">JS</div>
-                        <h3>JavaScript</h3>
-                        <p>Desenvolvimento web</p>
-                    </div>
-
-
-                    <div class="skill-card">
-                        <div class="skill-icon react">⚛</div>
-                        <h3>React</h3>
-                        <p>Interfaces modernas</p>
-                    </div>
-
-
-                    <div class="skill-card">
-                        <div class="skill-icon html">HTML</div>
-                        <h3>HTML</h3>
-                        <p>Estrutura de páginas web</p>
-                    </div>
-
-
-                    <div class="skill-card">
-                        <div class="skill-icon css">CSS</div>
-                        <h3>CSS</h3>
-                        <p>Estilização e responsividade</p>
-                    </div>
-
-
-                    <div class="skill-card">
-                        <div class="skill-icon git">Git</div>
-                        <h3>Git & GitHub</h3>
-                        <p>Versionamento de código</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROJETOS ================= -->
-
-        <section id="projetos" class="section">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <span>03.</span>
-                    <h2>Projetos</h2>
-
-                </div>
-
-
-                <p class="section-description">
-                    Alguns projetos que representam minha evolução
-                    como desenvolvedor.
-                </p>
-
-
-                <div class="projects-grid">
-
-                    <!-- Projeto 1 -->
-
-                    <article class="project-card">
-
-                        <div class="project-top">
-
-                            <span class="project-folder">
-                                📁
-                            </span>
-
-                            <div class="project-links">
-
-                                <a href="#" aria-label="GitHub">
-                                    GitHub ↗
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-                        <h3>
-                            Em desenvolvimento
-                        </h3>
-
-
-                        <p>
-                            Em desenvolvimento
-                        </p>
-
-
-                        <div class="project-tech">
-
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>REST</span>
-                            <span>JPA</span>
-                            <span>MySQL</span>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Projeto 2 -->
-
-                    <article class="project-card">
-
-                        <div class="project-top">
-
-                            <span class="project-folder">
-                                📁
-                            </span>
-
-                            <div class="project-links">
-
-                                <a href="#" aria-label="GitHub">
-                                    GitHub ↗
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-                        <h3>
-                            Em desenvolvimento
-                        </h3>
-
-
-                        <p>
-                            Em desenvolvimento
-                        </p>
-
-
-                        <div class="project-tech">
-
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Projeto 3 -->
-
-                    <article class="project-card">
-
-                        <div class="project-top">
-
-                            <span class="project-folder">
-                                📁
-                            </span>
-
-                            <div class="project-links">
-
-                                <a href="#" aria-label="GitHub">
-                                    GitHub ↗
-                                </a>
-
-                            </div>
-
-                        </div>
-
-
-                        <h3>
-                            Em desenvolvimento
-                        </h3>
-
-
-                        <p>
-                            Em desenvolvimento
-                        </p>
-
-
-                        <div class="project-tech">
-
-                            <span>Java</span>
-                            <span>POO</span>
-                            <span>Collections</span>
-                            <span>Streams</span>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= CONTATO ================= -->
-
-            <section id="contato" class="contact">
-                <div class="container">
-                <h2>Entre em contato</h2>
-
-                <p>
-                    Estou aberto a oportunidades, projetos e conexões na área de desenvolvimento.
-                </p>
-
-                <div class="contact-links">
-
-                    <a href="mailto:SEUEMAIL@gmail.com" class="contact-card">
-                        <span>📧</span>
-                        <div>
-                            <strong>E-mail</strong>
-                            <p>contatowilson76@gmail.com</p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/SEU_USUARIO" 
-                        target="_blank" 
-                        class="contact-card">
-                        <span>💻</span>
-                        <div>
-                            <strong>GitHub</strong>
-                            <p>github.com/WilsonCLima</p>
-                        </div>
-                    </a>
 
                 </div>
             </div>
-        </section>
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer class="footer">
-
-        <div class="container">
-
-            <p>
-                Desenvolvido por <strong>Wilson Costa Lima</strong>
-            </p>
-
-            <p class="footer-code">
-                &lt;code /&gt;
-            </p>
 
         </div>
+    </section>
 
-    </footer>
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+        <div class="container">
 
-    <script src="js/script.js"></script>
+            <div class="section-title">
+                <span>01.</span>
+                <h2>Sobre mim</h2>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-text">
+                    <p>
+                        Sou <strong>Wilson Costa Lima</strong>, estudante de
+                        <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong>
+                        e desenvolvedor Backend Java em formação.
+                    </p>
+
+                    <p>
+                        Tenho maior domínio e foco em
+                        <strong>Java, Spring Boot, APIs REST, bancos de dados
+                        e desenvolvimento web</strong>.
+                    </p>
+
+                    <p>
+                        Busco transformar o que estudo em projetos práticos,
+                        fortalecendo meus fundamentos e evoluindo na construção
+                        de aplicações bem estruturadas e APIs robustas.
+                    </p>
+                </div>
+
+                <div class="about-info">
+
+                    <div class="info-card">
+                        <span>🎓</span>
+                        <div>
+                            <strong>Formação</strong>
+                            <p>Análise e Desenvolvimento de Sistemas</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span>💻</span>
+                        <div>
+                            <strong>Foco</strong>
+                            <p>Backend Java</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span>🚀</span>
+                        <div>
+                            <strong>Objetivo</strong>
+                            <p>Software Engineer</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section id="skills" class="section section-dark">
+        <div class="container">
+
+            <div class="section-title">
+                <span>02.</span>
+                <h2>Tecnologias</h2>
+            </div>
+
+            <p class="section-description">
+                Meu foco principal está no desenvolvimento Backend com Java.
+                Também estudo tecnologias complementares para ampliar minha base.
+            </p>
+
+            <div class="skills-grid">
+
+                <div class="skill-card skill-featured">
+                    <div class="skill-icon java">☕</div>
+                    <h3>Java</h3>
+                    <p>Principal linguagem de desenvolvimento.</p>
+                </div>
+
+                <div class="skill-card skill-featured">
+                    <div class="skill-icon spring">◆</div>
+                    <h3>Spring Boot</h3>
+                    <p>Desenvolvimento de APIs e aplicações Backend.</p>
+                </div>
+
+                <div class="skill-card skill-featured">
+                    <div class="skill-icon api">↔</div>
+                    <h3>APIs REST</h3>
+                    <p>Construção e consumo de serviços REST.</p>
+                </div>
+
+                <div class="skill-card skill-featured">
+                    <div class="skill-icon database">▣</div>
+                    <h3>Bancos de Dados</h3>
+                    <p>SQL e bancos de dados relacionais.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon javascript">JS</div>
+                    <h3>JavaScript</h3>
+                    <p>Desenvolvimento web e lógica no frontend.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon html">HTML</div>
+                    <h3>HTML & CSS</h3>
+                    <p>Estrutura, estilização e responsividade.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon react">⚛</div>
+                    <h3>React</h3>
+                    <p>Desenvolvimento de interfaces web.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon git">Git</div>
+                    <h3>Git & GitHub</h3>
+                    <p>Versionamento e organização de projetos.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon docker">◈</div>
+                    <h3>Docker</h3>
+                    <p>Estudando containerização de aplicações.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+        <div class="container">
+
+            <div class="section-title">
+                <span>03.</span>
+                <h2>Projetos</h2>
+            </div>
+
+            <p class="section-description">
+                Projetos práticos desenvolvidos para aplicar conhecimentos
+                e evoluir minhas habilidades como desenvolvedor.
+            </p>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-folder">📁</span>
+
+                        <div class="project-links">
+                            <a href="https://github.com/WilsonCLima"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="GitHub">
+                                GitHub ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3>Controle Financeiro API</h3>
+
+                    <p>
+                        API REST desenvolvida para praticar desenvolvimento
+                        Backend com Java, Spring Boot, persistência de dados
+                        e organização de uma aplicação em camadas.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>REST</span>
+                        <span>JPA</span>
+                        <span>SQL</span>
+                    </div>
+                </article>
+
+                <article class="project-card project-placeholder">
+                    <div class="project-top">
+                        <span class="project-folder">📁</span>
+                    </div>
+
+                    <h3>Próximo projeto</h3>
+
+                    <p>
+                        Novo projeto em construção. Em breve, mais uma
+                        aplicação para demonstrar minha evolução técnica.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Em breve</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contact">
+        <div class="container">
+
+            <p class="contact-number">04.</p>
+            <h2>Vamos conversar?</h2>
+
+            <p>
+                Estou aberto a oportunidades, projetos e conexões
+                na área de desenvolvimento de software.
+            </p>
+
+            <div class="contact-links">
+
+                <a href="mailto:contatowilson76@gmail.com" class="contact-card">
+                    <span>📧</span>
+                    <div>
+                        <strong>E-mail</strong>
+                        <p>contatowilson76@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/WilsonCLima"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-card">
+                    <span>💻</span>
+                    <div>
+                        <strong>GitHub</strong>
+                        <p>github.com/WilsonCLima</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>
+            Desenvolvido por <strong>Wilson Costa Lima</strong>
+        </p>
+
+        <p class="footer-code">
+            © <span id="year"></span> • &lt;code /&gt;
+        </p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
-
